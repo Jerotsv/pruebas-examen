@@ -29,6 +29,12 @@ body {
     font-size: 2em;
     align-self: flex-start;
     margin: 5%;
+    line-height: 1.5;
+    padding: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid hsl(213, 19%, 18%);
+    background-color: hsl(213, 19%, 24%);
 }
 
 .ratingButtons {
@@ -82,6 +88,7 @@ body {
     font-size: 15px;
     margin-top: 10px;
     color: hsl(217, 12%, 63%);
+    line-height: 1.5;
 }
 
 .submitButton:disabled {

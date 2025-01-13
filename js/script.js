@@ -9,6 +9,7 @@ ratingButtons.forEach((button) => {
         ratingButtons.forEach((btn) => btn.classList.remove("selected"));
         button.classList.add("selected");
         selectedRating = button.textContent;
+        submitButton.disabled = false;
     });
 });
 

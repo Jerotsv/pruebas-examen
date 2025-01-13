@@ -8,7 +8,7 @@ body {
     background-color: #141414;
 }
 
-.rating-card {
+.ratingCard {
     width: 300px;
     padding: 40px;
     margin: 0 auto;
@@ -25,14 +25,14 @@ body {
     margin: 5%;
 }
 
-.rating-buttons {
+.ratingButtons {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
     width: 100%;
 }
 
-.rating-button {
+.ratingButton {
     background-color: hsl(217, 12%, 63%);
     border: none;
     border-radius: 50%;
@@ -42,12 +42,12 @@ body {
     cursor: pointer;
 }
 
-.rating-button.selected {
+.ratingButton.selected {
     background-color: hsl(25, 97%, 53%);
     color: white;
 }
 
-.submit-button {
+.submitButton {
     background-color: hsl(25, 97%, 53%);
     color: white;
     border: none;
@@ -59,4 +59,32 @@ body {
     max-width: 400px;
     display: block;
     margin: 20px auto;
+}
+
+.thankYouForVote {
+    display: none; /* Oculta el contenedor inicialmente */
+    text-align: center;
+    margin-top: 20px;
+    background-color: hsl(213, 19%, 18%);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: hsl(0, 0%, 100%);
+}
+
+.thankYouForVoteImg {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.thankYouTitle {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.thankYouText {
+    font-size: 1em;
+    margin-top: 10px;
 }

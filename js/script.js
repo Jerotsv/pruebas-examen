@@ -1,22 +1,24 @@
-const ratingButtons = document.querySelectorAll('.rating-button');
-const submitButton = document.querySelector('.submit-button');
+const ratingButtons = document.querySelectorAll(".ratingButton");
+const submitButton = document.querySelector(".submitButton");
+const thankYouMessage = document.querySelector(".thankYouForVote");
 
 let selectedRating = null;
 
 ratingButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-        ratingButtons.forEach((btn) => btn.classList.remove('selected'));
+    button.addEventListener("click", () => {
+        ratingButtons.forEach((btn) => btn.classList.remove("selected"));
 
-        button.classList.add('selected');
+        button.classList.add("selected");
 
         selectedRating = button.textContent;
     });
 });
 
-submitButton.addEventListener('click', () => {
+submitButton.addEventListener("click", () => {
     if (selectedRating) {
-        alert(`Thank you for your feedback! You rated us ${selectedRating}/5.`);
+        document.querySelector(".ratingCard").style.display = "none";
+        thankYouMessage.style.display = "block";
     } else {
-        alert('Please select a rating before submitting!');
+        alert("¡Por favor, selecciona una calificación antes de enviar!");
     }
 });

@@ -17,11 +17,7 @@ ratingButtons.forEach((button) => {
 });
 
 submitButton.addEventListener("click", () => {
-    if (selectedRating) {
-        document.querySelector(".ratingCard").style.display = "none";
-        selectedRatingText.textContent = `Seleccionaste ${selectedRating} de 5`;
-        thankYouMessage.style.display = "block";
-    } else {
-        alert("¡Por favor, selecciona una calificación antes de enviar!");
-    }
+    document.querySelector(".ratingCard").style.display = "none";
+    selectedRatingText.textContent = `Seleccionaste ${selectedRating} de 5`;
+    thankYouMessage.style.display = "block";
 });

@@ -45,13 +45,15 @@ body {
 }
 
 .ratingButton {
-    background-color: hsl(217, 12%, 63%);
     border: none;
     border-radius: 50%;
     width: 40px;
     height: 40px;
     font-size: 1em;
     cursor: pointer;
+    border: 1px solid hsl(213, 19%, 18%);
+    background-color: hsl(213, 19%, 24%);
+    color: hsl(217, 12%, 63%);
 }
 
 .ratingButton.selected {
@@ -61,9 +63,9 @@ body {
 
 .submitButton {
     background-color: hsl(25, 97%, 53%);
-    color: white;
+    color: hsl(213, 19%, 24%);
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 15px 0;
     font-size: 1.2em;
     cursor: pointer;

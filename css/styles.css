@@ -56,11 +56,6 @@ body {
     color: hsl(217, 12%, 63%);
 }
 
-.ratingButton.selected {
-    background-color: hsl(25, 97%, 53%);
-    color: white;
-}
-
 .submitButton {
     background-color: hsl(25, 97%, 53%);
     color: hsl(213, 19%, 24%);
@@ -109,4 +104,14 @@ body {
     display: inline-block;
     border: 1px solid hsl(60, 1%, 17%);
     text-align: center;
+}
+
+.ratingButton:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.ratingButton.selected {
+    background-color: hsl(0, 0%, 100%);
+    color: black;
 }

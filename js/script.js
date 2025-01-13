@@ -3,11 +3,13 @@ const submitButton = document.querySelector(".submitButton");
 const thankYouMessage = document.querySelector(".thankyouForVote");
 const selectedRatingText = document.querySelector(".selectedRatingText");
 
-let selectedRating = null;
+let selectedRating = "";
 
 ratingButtons.forEach((button) => {
     button.addEventListener("click", () => {
-        ratingButtons.forEach((btn) => btn.classList.remove("selected"));
+        ratingButtons.forEach((ratingButton) =>
+            ratingButton.classList.remove("selected")
+        );
         button.classList.add("selected");
         selectedRating = button.textContent;
         submitButton.disabled = false;

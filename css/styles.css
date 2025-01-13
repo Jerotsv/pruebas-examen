@@ -1,0 +1,62 @@
+body {
+    font-family: "Overpass", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #141414;
+}
+
+.rating-card {
+    width: 300px;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: hsl(0, 0%, 100%);
+}
+
+.star {
+    font-size: 2em;
+    display: flex;
+    text-align: left;
+    margin: 5%;
+}
+
+.rating-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.rating-button {
+    background-color: hsl(217, 12%, 63%);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.rating-button.selected {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.submit-button {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 0;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
+}

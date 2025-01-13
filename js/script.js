@@ -1,15 +1,13 @@
 const ratingButtons = document.querySelectorAll(".ratingButton");
 const submitButton = document.querySelector(".submitButton");
-const thankYouMessage = document.querySelector(".thankYouForVote");
+const thankYouMessage = document.querySelector(".thankyouForVote");
 
 let selectedRating = null;
 
 ratingButtons.forEach((button) => {
     button.addEventListener("click", () => {
         ratingButtons.forEach((btn) => btn.classList.remove("selected"));
-
         button.classList.add("selected");
-
         selectedRating = button.textContent;
     });
 });

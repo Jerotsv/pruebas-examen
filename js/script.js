@@ -17,7 +17,7 @@ ratingButtons.forEach((button) => {
 });
 
 submitButton.addEventListener("click", () => {
-    document.querySelector(".ratingCard").style.display = "none";
+    document.querySelector(".ratingCard").classList.add("displayNone");
     selectedRatingText.textContent = `Seleccionaste ${selectedRating} de 5`;
-    thankYouMessage.style.display = "block";
+    thankYouMessage.classList.remove("displayNone");
 });

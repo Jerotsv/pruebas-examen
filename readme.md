@@ -2,4 +2,6 @@
 
 ## Realizado por Jerónimo Tostado
 
-### Fecha examen módulo 2: 20/03/2025
+### Examen módulo 1: 13/01/2025
+
+### Examen módulo 2: 20/03/2025

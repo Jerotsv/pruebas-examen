@@ -15,7 +15,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -w",
     "start": "node dist/server1.js",
-    "start:dev": "cross-env NODE_ENV=dev DEBUG=films* node --watch --env-file=.env ./dist/index.js"
+    "start:dev": "cross-env NODE_ENV=dev DEBUG=films* node --watch --env-file=.env ./dist/server1.js"
   },
   "keywords": [],
   "author": "",

@@ -1,6 +1,6 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
-import { Product, products, generateUniqueId } from "./mockProducts.js"; // Traemos los productos del archivo mockProduct.ts
+import { Product, products } from "./mockProducts.js"; // Traemos los productos del archivo mockProduct.ts
 
 const app = express();
 
@@ -19,7 +19,7 @@ app.get("/products", (req: Request, res: Response) => {
     // Intentamos devolver el array de productos
     res.json(products); // Si todo va bien, se envían los productos como JSON
   } catch (error) {
-    // Si hay algún error (algo sale mal), respondemos con un código de error 500 (error en el servidor)
+    // Si hay algún error, respondemos con un código de error 500 (error en el servidor)
     res.status(500).json({ message: "Error al obtener los productos", error });
   }
 });
@@ -29,7 +29,7 @@ app.get("/products/:id", (req: Request, res: Response) => {
   const { id } = req.params; // Obtenemos el ID del producto desde los parámetros de la URL
   try {
     // Buscamos el producto que tiene el ID que nos pasan
-    const product = products.find((p) => p.id === id); // find() devuelve el producto si lo encuentra, sino devuelve undefined
+    const product = products.find((product) => product.id === id); // find() devuelve el producto si lo encuentra, sino devuelve undefined
     if (!product) {
       // Si no encontramos el producto, lanzamos un error
       throw new Error("Producto no encontrado"); // Esto hace que el flujo pase al bloque catch

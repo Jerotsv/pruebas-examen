@@ -31,7 +31,9 @@ export const products: Product[] = [
   },
 ];
 
-// Función para generar un ID único para los productos
-export function generateUniqueId(): string {
-  return Math.random().toString(36); // Genera un ID aleatorio único
-}
+// // Función para generar un ID único para los productos
+// export function generateUniqueId(): string {
+//   return Math.random().toString(36); // Genera un ID aleatorio único
+// }
+
+// Mi idea era generar los id de manera random, pero por falta de tiempo no he podido hacerlo

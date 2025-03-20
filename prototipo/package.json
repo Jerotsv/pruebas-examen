@@ -3,6 +3,7 @@
     "typescript": "^5.8.2"
   },
   "dependencies": {
+    "@types/express": "^5.0.1",
     "express": "^4.21.2"
   },
   "name": "prototipo",

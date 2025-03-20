@@ -1,8 +1,8 @@
-import express, { Request, Response } from "express";
+import express, { Request, Response } from "express"; // Importamos Express y los tipos Request y Response para tipado en TypeScript
 import cors from "cors";
 import { Product, products } from "./mockProducts.js"; // Traemos los productos del archivo mockProduct.ts
 
-const app = express();
+const app = express(); // Creamos la aplicación de Express
 
 // Desactivamos la cabecera 'X-Powered-By' para mejorar la seguridad, para que no se muestre que usamos Express
 app.disable("x-powered-by");

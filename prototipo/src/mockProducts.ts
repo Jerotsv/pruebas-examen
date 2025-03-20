@@ -1,3 +1,4 @@
+// Definimos la interfaz Product
 export interface Product {
   id: string;
   name: string;
@@ -8,6 +9,7 @@ export interface Product {
   updated_at: Date;
 }
 
+// Creamos un array de productos de ejemplo
 export const products: Product[] = [
   {
     id: "1",
@@ -29,6 +31,7 @@ export const products: Product[] = [
   },
 ];
 
+// Función para generar un ID único para los productos
 export function generateUniqueId(): string {
-  return Math.random().toString(36).substring(2, 9); // Genera un ID aleatorio único
+  return Math.random().toString(36); // Genera un ID aleatorio único
 }
